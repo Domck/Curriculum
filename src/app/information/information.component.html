@@ -1,0 +1,131 @@
+<div class="container mt-4">
+  <div class="row">
+      <div class="col-md-4 contact-info border rounded p-3">
+        <div class="text-center">
+          <img src="yo.png" alt="Foto de perfil" class="img-fluid mb-3" width="60%">
+        </div>
+          <div class="mt-4 sticky-buttons" style="top: 20px;">
+              <div class="d-grid gap-2">
+                  <a href="#AcercaDeMi" class="btn btn-secondary" type="button">Acerca de mí</a>
+                  <a href="#experiencia" class="btn btn-secondary" type="button">Experiencia laboral</a>
+                  <a href="#educación" class="btn btn-secondary" type="button">Educación</a>
+                  <a href="#skill" class="btn btn-secondary" type="button">Skills</a>
+                  <a href="#certificado" class="btn btn-secondary" type="button">Certificados</a>
+                  <a href="#habilidad" class="btn btn-secondary" type="button">Habilidades</a>
+                  <a href="#idioma" class="btn btn-secondary" type="button">Idiomas</a>
+                  <a (click)="openPdf()" class="btn btn-secondary" type="button">Ver certificados</a>
+
+              </div>
+          </div>
+      </div>
+      <div class="col-md-8">
+          <div class="text-center border rounded p-3">
+              <h1 class="name-header">JHERSON DERICK HERRERA JARAMILLO</h1>
+              <h3 class="subtitle">Ing. de Sistemas</h3><br>
+
+              <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ">
+                          <li class="nav-item">
+                            <a href="{{whatsapp}}" class="nav-link">
+                              <button type="button" class="btn btn-with-image btn-whatsapp">
+                                  <i class="bi bi-whatsapp"> Contacto: <div>+51946349079</div></i>
+                              </button>
+                          </a>
+                          </li>
+                            <li class="nav-item">
+                                <a href="mailto:jhersonjh44@gmail.com" class="nav-link">
+                                    <button type="button" class="btn btn-with-image btn-email">
+                                        <i class="bi bi-envelope"> Correo <div>{{correo}}</div></i>
+                                    </button>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="https://www.linkedin.com/in/jherson-derick-herrera" class="nav-link">
+                                    <button type="button" class="btn btn-with-image btn-linkedin">
+                                        <i class="bi bi-linkedin"> LinkedIn: <div>jherson-derick-herrera</div></i>
+                                    </button>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/Domck" class="nav-link">
+                                    <button type="button" class="btn btn-with-image btn-github">
+                                        <i class="bi bi-github"> GitHub: <div>Domck</div></i>
+                                    </button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+          </div>
+
+          <div class="border rounded p-3">
+              <div class="mt-4" id="AcercaDeMi">
+                  <h4 class="section-title"><b>Acerca de mí</b></h4>
+                  <p>{{AcercaMi}}</p>
+              </div>
+
+              <div class="mt-4" id="experiencia">
+                  <h4 class="section-title"><b>Experiencia</b></h4>
+                  <ul>
+                      <li>América Móvil (Claro Perú)</li>
+                      <p class="text-left" *ngFor="let experiencia of experiencia">{{experiencia}}</p>
+                  </ul>
+              </div>
+
+              <div class="mt-4" id="educación">
+                  <h4 class="section-title"><b>Educación</b></h4>
+                  <ul>
+                      <li>Ingeniería de Sistemas</li>
+                      <p class="text-left" *ngFor="let universidad of universidad">{{universidad}}</p>
+                  </ul>
+              </div>
+
+              <div class="mt-4" id="skill">
+                  <h4 class="section-title"><b>Skills</b></h4>
+                  <ul>
+                      <p>CONOCIMIENTOS DE ANALISTA DE SISTEMA</p>
+                      <li *ngFor="let AnalisiSistema of AnalisiSistema">{{AnalisiSistema}}</li>
+                      <br>
+                      <p>DESARROLLO FRONTEND</p>
+                      <li *ngFor="let Front of Front">{{Front}}</li>
+                      <br>
+                      <p>DESARROLLO BACKEND</p>
+                      <li *ngFor="let Back of Back">{{Back}}</li>
+                      <br>
+                      <p>CLOUD COMPUTING</p>
+                      <li *ngFor="let Cloud of Cloud">{{Cloud}}</li>
+                      <br>
+                  </ul>
+              </div>
+
+              <div class="mt-4" id="certificado">
+                  <h4 class="section-title">Certificados</h4>
+                  <ul>
+                      <li *ngFor="let curso of cursos">{{curso}}</li>
+                  </ul>
+              </div>
+
+              <div class="mt-4" id="habilidad">
+                  <h4 class="section-title">Habilidades</h4>
+                  <ul>
+                      <li *ngFor="let habilidades of habilidades">{{habilidades}}</li>
+                  </ul>
+              </div>
+
+              <div class="mt-4" id="idioma">
+                  <h4 class="section-title">Idiomas</h4>
+                  <ul>
+                      <li *ngFor="let idioma of idioma">{{idioma}}</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
