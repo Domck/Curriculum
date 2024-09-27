@@ -18,6 +18,8 @@ export class InformationComponent {
     'Java | Universidad Autónoma del Perú',
     'Laravel / PHP | Udemy',
     'HTML5 | Udemy',
+    'POWER BI | Universidad Autónoma del Perú',
+    'MICROSOFT® EXCEL PROFESIONAL | Universidad Autónoma del Perú',
   ];
   habilidades:string[]=[
     'Comunicación asertiva',
@@ -29,16 +31,18 @@ export class InformationComponent {
   ];
   whatsapp="https://wa.me/946349079?text=Hola%20Jherson";
   universidad:string[]=[
-  "Universidad Autónoma del Perú",
-  "2019-2024 (Estudio universitario culminado)"
+  "Universidad Autónoma del Perú | 2019 - 2024 (Estudios finalizados)",
   ];
   experiencia:string[]=[
     "Desarrollador de Configuraciones y Líder de Proyectos",
-    "2023-2024"
+    "2023-2024",
     ];
 AnalisiSistema:string[]=[
 "Diagramas de Casos de Uso, Secuencia, Estados y Actividades",
 "Especificaciones de Casos de Uso",
+'Liderazgo de equipos de desarrollo',
+'Planificación, ejecución y control de proyectos tecnológicos',
+'Gestión de tareas y cronogramas con Trello, Jira',
 "Conocimiento en metodologías ágiles: Scrum, RUP, Kanban",
 "Aplicación de metodologías ágiles en proyectos",
 ];
@@ -46,7 +50,6 @@ AnalisiSistema:string[]=[
 Front:string[]=[
   "Frameworks: Angular",
   "Lenguajes y Tecnologías: HTML, CSS, JavaScript, typeScript",
-  "Conocimiento en metodologías ágiles: Scrum, RUP, Kanban",
   "Herramientas: Figma, Bootstrap, Metodología BEM",
   ];
 Back:string[]=[
@@ -55,16 +58,23 @@ Back:string[]=[
     "PHP",
     ];
 Cloud:string[]=[
-      "Amazon Web Services ",
+      "Amazon Web Services (AWS) ",
       ];
 
 idioma:string[]=[
 'Español',
 'Ingles',
 ];
+
+datos:string[]=[
+  'Herramientas de visualización de datos: Power BI',
+  'Análisis de datos con Excel',
+  'Gestión de bases de datos: MySQL, SQL Server',
+  'Lenguajes de consulta: SQL',
+  ];
       openPdf() {
-        const pdfUrl = 'certificado.pdf'; // Cambia esto a la ruta de tu PDF
-        window.open(pdfUrl, '_blank'); // Abre el PDF en una nueva pestaña
+        const pdfUrl = 'certificado.pdf';
+        window.open(pdfUrl, '_blank');
       }
 
 }
