@@ -6,72 +6,74 @@ import { Component } from '@angular/core';
   styleUrl: './information.component.css'
 })
 export class InformationComponent {
-  correo="jhersonjh44@gmail.com";
-  AcercaMi="Soy un profesional con un enfoque en la gestión, diseño y desarrollo de soluciones tecnológicas innovadoras. Mi sólida capacidad para identificar y resolver problemas de manera creativa ha resultado en la optimización de procesos y un aumento significativo en la eficiencia operativa. Además, mi enfoque orientado a resultados y mi habilidad para colaborar efectivamente en equipos multidisciplinarios me han permitido contribuir de manera significativa en proyectos tecnológicos de alto impacto.";
-  cursos: string[] = [
-    'Kanban para Equipos Ágiles | Universidad ESAN',
-    'Scrum | Escuela de Postgrado UPC',
-    'SQL | Curso de Database Design and Programming with SQL | Universidad Autónoma del Perú',
-    'Administrador de Redes y Comunicaciones | Universidad Autónoma del Perú',
+  correo="ing.jhersonherrera@gmail.com";
+  AcercaMi="Soy un profesional con experiencia en la gestión, diseño y desarrollo de soluciones tecnológicas, enfocado en la optimización de procesos y mejora de la eficiencia operativa. Domino metodologías ágiles como Scrum y Kanban, logrando reducir tiempos de entrega y potenciar la productividad. Cuento con capacidad para liderar equipos multidisciplinarios, junto con sólidos conocimientos técnicos, me permite ejecutar proyectos estratégicos con resultados tangibles. ";
+  cursos1: string[] = [
+    'Kanban para equipos ágiles | Universidad ESAN',
+    'SCRUM | Escuela de Postgrado UPC',
+    'Design thinking en proyectos digitales | Escuela de Postgrado USIL',
+    'Gestión y proyectos | Escuela de Postgrado USIL'
+  ];
+  cursos2: string[] = [
+    'Java | Universidad Autónoma del Perú',
+    'Desarrollador de software y programación segura | Universidad Autónoma del Perú',
+    'Oracle Database | Udemy',
     'Angular | Udemy',
     'JavaScript | Udemy',
-    'Java | Universidad Autónoma del Perú',
-    'Laravel / PHP | Udemy',
+    'PHP | Udemy',
     'HTML5 | Udemy',
-    'POWER BI | Universidad Autónoma del Perú',
-    'MICROSOFT® EXCEL PROFESIONAL | Universidad Autónoma del Perú',
+    'Python | Udemy'
   ];
+  cursos3: string[] = [
+    'SQL | Universidad Autónoma del Perú',
+    'Power BI | Universidad Autónoma del Perú',
+    'Microsoft Excel Profesional | Universidad Autónoma del Perú'
+  ];
+
   habilidades:string[]=[
-    'Comunicación asertiva',
-    'Resolución de problemas',
-    'Desarrollo ágil',
-    'Trabajo en equipo',
-    'Proactivo',
-    'Liderazgo',
+    'Gestión eficiente del tiempo y priorización de tareas.',
+    'Adaptabilidad y proactividad en entornos dinámicos.',
+    'Trabajo bajo presión con enfoque en resultados.',
+    'Comunicación efectiva y liderazgo colaborativo',
+    'Resolución de problemas y pensamiento crítico.'
   ];
   whatsapp="https://wa.me/946349079?text=Hola%20Jherson";
   universidad:string[]=[
-  "Universidad Autónoma del Perú | 2019 - 2024 (Estudios finalizados)",
+  "Ingeniería de Sistemas",
   ];
   experiencia:string[]=[
-    "Desarrollador de Configuraciones y Líder de Proyectos",
-    "2023-2024",
+    "Desarrollador y líder de proyectos (Mayo 2023 – Febrero 2025)",
     ];
 AnalisiSistema:string[]=[
-"Diagramas de Casos de Uso, Secuencia, Estados y Actividades",
-"Especificaciones de Casos de Uso",
+"Lenguajes: Java, Python, JavaScript, TypeScript, PHP",
+"Frameworks y Bibliotecas: Angular, Bootstrap",
 'Liderazgo de equipos de desarrollo',
-'Planificación, ejecución y control de proyectos tecnológicos',
-'Gestión de tareas y cronogramas con Trello, Jira',
-"Conocimiento en metodologías ágiles: Scrum, RUP, Kanban",
-"Aplicación de metodologías ágiles en proyectos",
+'Bases de Datos: MySQL, PostgreSQL, MongoDB, Oracle',
+'Plataformas de Desarrollo: Oracle APEX',
 ];
 
 Front:string[]=[
-  "Frameworks: Angular",
-  "Lenguajes y Tecnologías: HTML, CSS, JavaScript, typeScript",
-  "Herramientas: Figma, Bootstrap, Metodología BEM",
+  "AWS : Gestión de almacenamiento en la nube, configuración de buckets, control de versiones, políticas IAM, y optimización de costos para manejo eficiente de datos.",
+  "Power Apps: Creación de aplicaciones empresariales personalizadas, integradas con plataformas como Microsoft 365 y Power Automate para optimizar flujos de trabajo y mejorar la productividad.",
+  "Google Apps Script: Desarrollo de soluciones automatizadas para la integración de sistemas y personalización de procesos en Google Workspace.",
+  "Apache NiFi: Configuración y gestión de flujos de datos automatizados para la integración, transformación y monitorización de datos."
   ];
 Back:string[]=[
-    "Python",
-    "Java",
-    "PHP",
+    "Git",
+    "Bitbucket"
     ];
 Cloud:string[]=[
-      "Amazon Web Services (AWS) ",
+      "Modelado UML: Creación de diagramas de Casos de Uso, Secuencia, Estados y Actividades para el análisis y diseño de sistemas.",
+      "Documentación: Elaboración de Casos de Uso con especificaciones funcionales detalladas para equipos de desarrollo."
       ];
-
-idioma:string[]=[
-'Español',
-'Ingles',
-];
-
 datos:string[]=[
-  'Herramientas de visualización de datos: Power BI',
-  'Análisis de datos con Excel',
-  'Gestión de bases de datos: MySQL, SQL Server',
-  'Lenguajes de consulta: SQL',
+  'Sistemas Operativos: Linux, Windows',
+  'Comandos: Uso de comandos en Linux y Windows (CMD) para administración de usuarios, permisos, manejo de archivos, procesos y servicios'
   ];
+datos1:string[]=[
+    'Herramientas de visualización de datos: Power BI, Excel',
+    'Lenguajes de consulta: SQL'
+    ];
       openPdf() {
         const pdfUrl = 'certificado.pdf';
         window.open(pdfUrl, '_blank');
